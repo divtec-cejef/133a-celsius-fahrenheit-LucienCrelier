@@ -5,11 +5,16 @@
  * @since   2019-08-19
  */
 
-(function main() {
-  'use strict'; // Demande un interprétation stricte du code
+// Demander la température en celsius
+let tempCelsius = prompt('Température en celius :');
 
-  let a = 'Bonjour';
+// Transformer la température en nombre entier
+tempCelsius = parseFloat(tempCelsius);
 
-  console.log(a);
-}()); // Main IIFE
-
+// Tester si c'est un nombre
+if (isNaN(tempCelsius)) {
+    alert('Erreur, entre une température !');
+} else {
+    // affiche la température en Fahrenheit
+    alert(`${tempCelsius}°C = ${tempCelsius * 9 / 5 + 32}°F`);
+}
