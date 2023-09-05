@@ -5,11 +5,11 @@
  * @since   2019-08-19
  */
 
-(function main() {
-  'use strict'; // Demande un interprétation stricte du code
 
-  let a = 'Bonjour';
+'use strict'; // Demande un interprétation stricte du code
 
-  console.log(a);
-}()); // Main IIFE
+let a = 'Bonjour';
+
+console.log(a);
+
 
