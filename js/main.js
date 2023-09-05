@@ -5,18 +5,11 @@
  * @since   2019-08-19
  */
 
-
-'use strict'; // Demande un interprétation stricte du code
-
-let a = 'Bonjour';
-
-console.log(a);
-
 // Demander la température en celsius
 let tempCelsius = prompt('Température en celius :');
 
 // Transformer la température en nombre entier
-tempCelsius = parseInt(tempCelsius);
+tempCelsius = parseFloat(tempCelsius);
 
 // Tester si c'est un nombre
 if (isNaN(tempCelsius)) {
